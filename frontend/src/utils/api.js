@@ -1,4 +1,4 @@
-const BASE = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
+const BASE = "https://learnmate-ai-almc.onrender.com/" || "http://localhost:5000/api";
 
 function getToken() {
   const u = localStorage.getItem("lm_user");

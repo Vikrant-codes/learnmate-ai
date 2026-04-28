@@ -10,7 +10,7 @@ const app  = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors({ origin: "" || "http://localhost:3000", credentials: true }));
+app.use(cors({ origin: "https://learnmate-ai-dusky.vercel.app" || "http://localhost:3000", credentials: true }));
 app.use(express.json({ limit: "10kb" }));
 
 // Public auth routes
