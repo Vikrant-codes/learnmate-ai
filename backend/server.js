@@ -14,7 +14,7 @@ app.use(cors({ origin: "https://learnmate-ai-dusky.vercel.app" || "http://localh
 app.use(express.json({ limit: "10kb" }));
 
 // Public auth routes
-app.use("/api/auth", authRoutes);
+app.use("/auth", authRoutes);
 
 // Protected AI routes — must be logged in
 app.use("/api", protect, apiRoutes);
